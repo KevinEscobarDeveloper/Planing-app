@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Recipe } from '../models/recipes/recipe.model';
 
 @Component({
   selector: 'app-recipes',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './recipes.component.scss'
 })
 export class RecipesComponent {
+  isLoading = false;
+  selectedRecipe!: Recipe;
 
 }
+
+
